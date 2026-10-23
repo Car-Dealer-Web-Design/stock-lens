@@ -6,6 +6,10 @@ Stock information is only as current as the supplied file. This is a presentatio
 
 ![Complete example](docs/preview.png)
 
+## Live demo
+
+[Try Stock Lens](https://car-dealer-web-design.github.io/stock-lens/). The demo runs in your browser; entered data is not uploaded by the tool. GitHub provides the hosting and handles request logs.
+
 ## Start locally
 
 Requires Node.js 22 or later. No runtime dependencies or account required.
