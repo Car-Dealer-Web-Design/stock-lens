@@ -1,0 +1,7 @@
+"stock_id","make","model","year","mileage","mileage_unit","price","status","viewing_url"
+"S1","Example","Compact","2020","21000","mi","8000","available","https://example.com/viewing"
+"S2","North","Touring estate with a longer example model name","2021","24200","mi","9500","reserved","https://example.com/viewing"
+"S3","West","City","2022","27400","mi","11000","sold","https://example.com/viewing"
+"S4","Example","Compact","2023","30600","mi","12500","available","https://example.com/viewing"
+"S5","North","Touring estate with a longer example model name","2020","33800","mi","","unknown","https://example.com/viewing"
+"S6","West","City","2021","37000","km","15500","available","https://example.com/viewing"

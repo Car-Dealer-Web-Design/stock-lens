@@ -1,0 +1,86 @@
+{
+  "title": "Example Motors / fictional stock stock",
+  "summary": "Manually supplied stock last updated 2026-10-23. No live availability or dealer-management connection.",
+  "vehicles": [
+    {
+      "stock_id": "S1",
+      "make": "Example",
+      "model": "Compact",
+      "year": 2020,
+      "mileage": 21000,
+      "mileage_unit": "mi",
+      "price": "8000",
+      "status": "available",
+      "viewing_url": "https://example.com/viewing",
+      "priceDisplay": "£8,000.00",
+      "action": "https://example.com/viewing"
+    },
+    {
+      "stock_id": "S2",
+      "make": "North",
+      "model": "Touring estate with a longer example model name",
+      "year": 2021,
+      "mileage": 24200,
+      "mileage_unit": "mi",
+      "price": "9500",
+      "status": "reserved",
+      "viewing_url": "https://example.com/viewing",
+      "priceDisplay": "£9,500.00",
+      "action": null
+    },
+    {
+      "stock_id": "S3",
+      "make": "West",
+      "model": "City",
+      "year": 2022,
+      "mileage": 27400,
+      "mileage_unit": "mi",
+      "price": "11000",
+      "status": "sold",
+      "viewing_url": "https://example.com/viewing",
+      "priceDisplay": "£11,000.00",
+      "action": null
+    },
+    {
+      "stock_id": "S4",
+      "make": "Example",
+      "model": "Compact",
+      "year": 2023,
+      "mileage": 30600,
+      "mileage_unit": "mi",
+      "price": "12500",
+      "status": "available",
+      "viewing_url": "https://example.com/viewing",
+      "priceDisplay": "£12,500.00",
+      "action": "https://example.com/viewing"
+    },
+    {
+      "stock_id": "S5",
+      "make": "North",
+      "model": "Touring estate with a longer example model name",
+      "year": 2020,
+      "mileage": 33800,
+      "mileage_unit": "mi",
+      "price": "",
+      "status": "unknown",
+      "viewing_url": "https://example.com/viewing",
+      "priceDisplay": "Price to confirm",
+      "action": null
+    },
+    {
+      "stock_id": "S6",
+      "make": "West",
+      "model": "City",
+      "year": 2021,
+      "mileage": 37000,
+      "mileage_unit": "km",
+      "price": "15500",
+      "status": "available",
+      "viewing_url": "https://example.com/viewing",
+      "priceDisplay": "£15,500.00",
+      "action": "https://example.com/viewing"
+    }
+  ],
+  "issues": [],
+  "markdown": "- Example Compact: £8,000.00; available; 21000 mi\n- North Touring estate with a longer example model name: £9,500.00; reserved; 24200 mi\n- West City: £11,000.00; sold; 27400 mi\n- Example Compact: £12,500.00; available; 30600 mi\n- North Touring estate with a longer example model name: Price to confirm; unknown; 33800 mi\n- West City: £15,500.00; available; 37000 km"
+}

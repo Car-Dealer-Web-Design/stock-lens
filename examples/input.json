@@ -1,0 +1,73 @@
+{
+  "dealer": "Example Motors / fictional stock",
+  "updatedOn": "2026-10-23",
+  "currency": "GBP",
+  "vehicles": [
+    {
+      "stock_id": "S1",
+      "make": "Example",
+      "model": "Compact",
+      "year": 2020,
+      "mileage": 21000,
+      "mileage_unit": "mi",
+      "price": "8000",
+      "status": "available",
+      "viewing_url": "https://example.com/viewing"
+    },
+    {
+      "stock_id": "S2",
+      "make": "North",
+      "model": "Touring estate with a longer example model name",
+      "year": 2021,
+      "mileage": 24200,
+      "mileage_unit": "mi",
+      "price": "9500",
+      "status": "reserved",
+      "viewing_url": "https://example.com/viewing"
+    },
+    {
+      "stock_id": "S3",
+      "make": "West",
+      "model": "City",
+      "year": 2022,
+      "mileage": 27400,
+      "mileage_unit": "mi",
+      "price": "11000",
+      "status": "sold",
+      "viewing_url": "https://example.com/viewing"
+    },
+    {
+      "stock_id": "S4",
+      "make": "Example",
+      "model": "Compact",
+      "year": 2023,
+      "mileage": 30600,
+      "mileage_unit": "mi",
+      "price": "12500",
+      "status": "available",
+      "viewing_url": "https://example.com/viewing"
+    },
+    {
+      "stock_id": "S5",
+      "make": "North",
+      "model": "Touring estate with a longer example model name",
+      "year": 2020,
+      "mileage": 33800,
+      "mileage_unit": "mi",
+      "price": "",
+      "status": "unknown",
+      "viewing_url": "https://example.com/viewing"
+    },
+    {
+      "stock_id": "S6",
+      "make": "West",
+      "model": "City",
+      "year": 2021,
+      "mileage": 37000,
+      "mileage_unit": "km",
+      "price": "15500",
+      "status": "available",
+      "viewing_url": "https://example.com/viewing"
+    }
+  ]
+}
