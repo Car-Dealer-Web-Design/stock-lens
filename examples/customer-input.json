@@ -1,0 +1,11 @@
+{
+  "vehicle": "Example Motors Hatchback 1.5 SE",
+  "year": "2020",
+  "mileage": "42500",
+  "unit": "miles",
+  "state": "available",
+  "priceKind": "exact",
+  "price": "12950",
+  "features": "Air conditioning\nTwo keys recorded\nService information available on request",
+  "viewing": "Contact the dealership to confirm availability and arrange a viewing."
+}

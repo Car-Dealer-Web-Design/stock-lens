@@ -1,7 +1,7 @@
 {
   "name": "stock-lens",
-  "version": "0.1.0",
-  "description": "Render an approved vehicle inventory as responsive HTML with available, reserved and sold states.",
+  "version": "0.2.0",
+  "description": "Put the key vehicle facts, price and viewing details into an advert that is easy for a buyer to read.",
   "type": "module",
   "private": false,
   "license": "MIT",

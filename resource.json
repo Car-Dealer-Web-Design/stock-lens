@@ -3,9 +3,10 @@
   "org": "Car-Dealer-Web-Design",
   "brand": "Car Dealer Web Design",
   "slug": "stock-lens",
-  "title": "Stock Lens",
+  "title": "Vehicle Advert Builder",
   "profile": "Independent car dealer websites with clear stock presentation and viewing enquiries. Operated by JW Digital Services Ltd.",
-  "accent": "#203b52",
-  "tint": "#e7eff6",
-  "summary": "Render an approved vehicle inventory as responsive HTML with available, reserved and sold states."
+  "accent": "#f51d2d",
+  "tint": "#fae7e1",
+  "summary": "Put the key vehicle facts, price and viewing details into an advert that is easy for a buyer to read.",
+  "brandMark": "<svg viewBox=\"0 0 58 48\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M1 43 25 5h12L13 43ZM17 43 41 5h12L29 43Z\" fill=\"currentColor\" stroke=\"none\"/></svg>"
 }

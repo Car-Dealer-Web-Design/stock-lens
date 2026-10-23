@@ -1,68 +1,49 @@
-# Stock Lens
+# Vehicle Advert Builder
 
-Stock Lens turns a small manually maintained vehicle list into a readable website stock page. It includes responsive cards, optional filters and clear status labels, without a dealer-management connection.
+Put the key vehicle facts, price and viewing details into an advert that is easy for a buyer to read.
 
-Stock information is only as current as the supplied file. This is a presentation tool, not a live inventory or finance system. Maintained by [Car Dealer Web Design](https://cardealerwebdesign.uk/), operated by JW Digital Services Ltd.
+**For independent car dealers. No coding knowledge needed.**
 
-![Complete example](docs/preview.png)
+[Open the free tool](https://car-dealer-web-design.github.io/stock-lens/) · [See a fictional worked example](https://car-dealer-web-design.github.io/stock-lens/examples/customer-output.html)
 
-## Live demo
+![Desktop preview](docs/preview.png)
 
-[Try Stock Lens](https://car-dealer-web-design.github.io/stock-lens/). The demo runs in your browser; entered data is not uploaded by the tool. GitHub provides the hosting and handles request logs.
+## How to use it
 
-## Start locally
+1. Open the tool in your browser. No installation or account is needed.
+2. Use your own business details in the labelled fields, or choose **Try a fictional example**.
+3. Choose **Build my vehicle advert** and review the result.
+4. Adjust your answers, then copy the result, download a text file or choose **Print / Save PDF**.
 
-Requires Node.js 22 or later. No runtime dependencies or account required.
+A copyable vehicle advert and a publication check for your stock team.
+
+## What to expect
+
+Use verified details for one vehicle. The preview will clearly show whether it is available, reserved or sold.
+
+This creates advert copy from your information. It does not check vehicle history, stock availability or legal and finance disclosures.
+
+Your answers are processed in the browser tab. They are not uploaded, emailed or saved by the tool. Refreshing or closing the tab clears them. Save your result before leaving. GitHub provides hosting and handles normal request logs. Example details are fictional, not customer results.
+
+## Design and maintenance
+
+The interface uses the colours, typography and visual treatment of [Car Dealer Web Design](https://cardealerwebdesign.uk/). The tool is maintained by Car Dealer Web Design, operated by JW Digital Services Ltd. The commercial website is a separate project.
+
+## For developers
+
+The customer tool uses native HTML controls and small browser modules, with no runtime framework. Its planning or calculation rules are in `src/customer.js`; presentation helpers are in `src/customer-ui.js`.
 
 ```sh
-npm ci
+npm ci --ignore-scripts
 npm test
 npm run build
 npm run serve
 ```
 
-Open http://127.0.0.1:4173/ for the complete local demonstration. Browser examples do not upload or persist entered data. The optional development server binds to loopback only.
+Open the local address printed by the server. `npm run build:pages` prepares the static GitHub Pages artifact. Tests cover the customer rules and output escaping.
 
-## Input and output
+The original v0.1 developer helpers remain in `src/index.js` for compatibility, with their original examples. They are not needed to use the customer tool. The existing repository name and Pages URL are retained so earlier links keep working.
 
-Supply dealer, updatedOn, currency (GBP) and vehicles: stock_id, make, model, year, mileage, mileage_unit (mi/km), price (decimal string or blank), status (available/reserved/sold/unknown), viewing_url (optional safe HTTPS). No live stock feed or finance calculation.
+## Licence and feedback
 
-Use [examples/input.json](examples/input.json) as the complete input contract. Compare the generated [JSON result](examples/output.json), [Markdown report](examples/output.md) and [complete HTML](examples/output.html). The demo is in [demo/index.html](demo/index.html). It needs the local server for JavaScript modules. HTML reports can be opened as standalone files.
-
-```sh
-node cli.mjs examples/input.json --format json
-node cli.mjs examples/input.json --format html --output report.html
-node cli.mjs examples/input.json --format md --output report.md
-```
-
-Flat collections can also be imported with `--csv data.csv --context context.json --key items` (replace `items` with the documented collection). Nested structures use JSON. See `node cli.mjs --help`.
-
-## Worked example
-
-Use six fictional stock records covering available, reserved and sold vehicles, a missing price, a long model name and a missing photograph. Do not include real registration numbers, VINs or real dealer listings. A sold card must not have an available-vehicle action; a missing price should say it needs confirmation rather than showing zero.
-
-All supplied example records are synthetic. No clients, outcomes, current professional advice or real service availability are represented by them. Keep real records private and review output before sharing it.
-
-## Checks
-
-- Duplicate stock IDs fail visibly. Missing prices and zero prices are distinct, and numeric sorting is correct.
-- Sold and reserved records display their real supplied state, including in filtered results and any generated detail view.
-- Mileage units remain explicit. No conversion or finance claim is inferred from incomplete data.
-- Image dimensions prevent layout shifts; long names fit at 320 px. All inventory remains accessible without JavaScript.
-- Rendering escapes imported text and rejects unsafe action/image URLs. Screenshots contain only licensed or original assets.
-
-The automated results and browser checks performed for this release are recorded in [verification.md](docs/verification.md). Manual screen-reader testing has not been performed. A passing automated check is not accessibility certification.
-
-## Contribute and maintain
-
-Use [Issues](https://github.com/Car-Dealer-Web-Design/stock-lens/issues) for a reproducible bug and [Discussions](https://github.com/Car-Dealer-Web-Design/stock-lens/discussions) for questions and improvements. Follow [CONTRIBUTING.md](CONTRIBUTING.md); report vulnerabilities privately using [SECURITY.md](SECURITY.md). See [CHANGELOG.md](CHANGELOG.md) for releases. Maintenance is best effort.
-
-Code, original illustrations and synthetic fixtures are MIT licensed. There is no required website backlink when reusing the resource. Commercial brand assets and third-party material are not included.
-
-## CSV example
-
-```sh
-node cli.mjs --csv examples/input.csv --context examples/context.json --key vehicles --format html --output csv-report.html
-```
-
-The context holds the root settings; the CSV holds the flat collection. Explicit booleans use `true` or `false`. Nested data uses JSON.
+MIT for tool code. Bundled typefaces retain their original licence notices in `demo/assets/font-licences`. [Ideas and feedback](https://github.com/Car-Dealer-Web-Design/stock-lens/discussions/1).
